@@ -1,0 +1,420 @@
+TRACE 2016/06/24 16:23:19.202899 logfile.go:52: Now archiving log output to /Users/sakskuma/Desktop/python/code/myapi/shipped-cli.log
+TRACE 2016/06/24 16:23:19.203071 config.go:106: Created .shipped directory in /Users/sakskuma
+TRACE 2016/06/24 16:23:19.203176 config.go:117: Created config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:19.204885 config.go:139: Using config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:19.205102 config.go:189: Set value apiToken=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN in /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:19.205612 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/06/24 16:23:19.210461 utils.go:98: Console width is 142; help width is 120
+TRACE 2016/06/24 16:23:19.210529 client.go:114: GET https://api.ciscoshipped.io/users/current?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN
+TRACE 2016/06/24 16:23:20.128773 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/06/24 16:23:20.131198 memdb.go:88: MemDB shipped.db: Opened /var/lib/Cisco/shipped/shipped.db
+TRACE 2016/06/24 16:23:20.131227 shipdb.go:97: Opened database shipped.db on behalf of user akshayakumar on server https://api.ciscoshipped.io
+TRACE 2016/06/24 16:23:20.131235 schema.go:89: Defined schema for multi-row table shipped.db.buildpacks with columns buildpackID, name
+TRACE 2016/06/24 16:23:20.131322 memdb.go:281: MemDB shipped.db: Updated _schema.buildpacks=0x7b225461626c65...
+TRACE 2016/06/24 16:23:20.131588 schema.go:89: Defined schema for multi-row table shipped.db.environments with columns environmentID, name
+TRACE 2016/06/24 16:23:20.131620 memdb.go:281: MemDB shipped.db: Updated _schema.environments=0x7b225461626c65...
+TRACE 2016/06/24 16:23:20.131873 schema.go:89: Defined schema for multi-row table shipped.db.ports with columns portnum, projectID, serviceID
+TRACE 2016/06/24 16:23:20.131913 memdb.go:281: MemDB shipped.db: Updated _schema.ports=0x7b225461626c65...
+TRACE 2016/06/24 16:23:20.132117 schema.go:89: Defined schema for multi-row table shipped.db.projects with columns name, serviceRepoIDs, serviceImageIDs, projectID
+TRACE 2016/06/24 16:23:20.132147 memdb.go:281: MemDB shipped.db: Updated _schema.projects=0x7b225461626c65...
+TRACE 2016/06/24 16:23:20.132383 schema.go:89: Defined schema for multi-row table shipped.db.services with columns name, apiServer, portnum, projectID, serviceID, user
+TRACE 2016/06/24 16:23:20.132427 memdb.go:281: MemDB shipped.db: Updated _schema.services=0x7b225461626c65...
+TRACE 2016/06/24 16:23:20.132707 main.go:150: Shipped-cli 1.0 b0 20160622 153942 starting with args struct { ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logs bool; Logfile string; MockSDKClient bool; NoHdr bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowIDs bool; ShowVersion bool; Server string; Token string; VM string; Watch int; ObjType string; Command string; Arguments []string }{ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logs:false, Logfile:"/Users/sakskuma/Desktop/python/code/myapi/shipped-cli.log", MockSDKClient:false, NoHdr:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowIDs:false, ShowVersion:false, Server:"https://api.ciscoshipped.io/", Token:"NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN", VM:"docker-compose", Watch:0, ObjType:"Local", Command:"bootstrap", Arguments:[]string{"b540e214-3a45-11e6-939c-0242ac110024"}}
+TRACE 2016/06/24 16:23:20.132724 commands.go:93: Running command(Local) subcommand(bootstrap) args([]string{"b540e214-3a45-11e6-939c-0242ac110024"}) help(false)
+TRACE 2016/06/24 16:23:20.132736 commands.go:162: objDesc.Name = "Local"
+TRACE 2016/06/24 16:23:20.132775 local.go:294: Starting LocalService.Bootstrap()
+TRACE 2016/06/24 16:23:20.132798 projects.go:309: Changed to project directory /Users/sakskuma/Desktop/python/code/myapi
+TRACE 2016/06/24 16:23:20.132831 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/06/24 16:23:20.132856 client.go:114: GET https://api.ciscoshipped.io/projects/b540e214-3a45-11e6-939c-0242ac110024?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN
+TRACE 2016/06/24 16:23:21.061289 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/06/24 16:23:21.061414 client.go:114: GET https://api.ciscoshipped.io/projects/b540e214-3a45-11e6-939c-0242ac110024/services?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN
+TRACE 2016/06/24 16:23:22.077597 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/06/24 16:23:22.078205 common.go:68: Project b540e214-3a45-11e6-939c-0242ac110024 (Akshay) has 7 services
+TRACE 2016/06/24 16:23:22.078221 bootstrap.go:59: Starting bootstrap on server(https://api.ciscoshipped.io/) for project(b540e214-3a45-11e6-939c-0242ac110024) with token(NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN)
+TRACE 2016/06/24 16:23:22.078229 memdb.go:84: MemDB shipped.db: Increased open count to 2
+TRACE 2016/06/24 16:23:22.078235 shipdb.go:91: Re-opened database shipped.db on behalf of user akshayakumar on server https://api.ciscoshipped.io
+TRACE 2016/06/24 16:23:22.078243 bootstrap.go:70: Obtaining platform-specific deployer...
+TRACE 2016/06/24 16:23:22.078286 command.go:23: Executing command: bash -c echo $EUID
+TRACE 2016/06/24 16:23:22.082365 deployer.go:93: Deploying bootstrap on darwin as sakskuma
+TRACE 2016/06/24 16:23:22.082529 bootstrap.go:78: Starting pre-verification...
+TRACE 2016/06/24 16:23:22.082565 client.go:114: POST https://api.ciscoshipped.io/cli/b540e214-3a45-11e6-939c-0242ac110024/status/project_init?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN
+TRACE 2016/06/24 16:23:22.943286 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/06/24 16:23:22.943441 common.go:31: Pre-Verification Start
+TRACE 2016/06/24 16:23:22.943628 common.go:37: Pre-Verification End
+TRACE 2016/06/24 16:23:22.943644 macdeployer.go:149: git Installation check
+TRACE 2016/06/24 16:23:22.943706 command.go:59: Executing command: git --version
+ERROR 2016/06/24 16:23:22.951785 macdeployer.go:161: Unable to find installed version of git; setting 999.99
+TRACE 2016/06/24 16:23:22.951968 deployer.go:254: Found version 2.7.4 in version string "git version 2.7.4 (Apple Git-66)" (match []string{"2.7.4", "2.7.4"})
+TRACE 2016/06/24 16:23:22.952306 macdeployer.go:149: git Installation check
+TRACE 2016/06/24 16:23:22.952541 command.go:59: Executing command: git --version
+TRACE 2016/06/24 16:23:22.958847 deployer.go:254: Found version 2.7.4 in version string "git version 2.7.4 (Apple Git-66)" (match []string{"2.7.4", "2.7.4"})
+2016/06/24 16:23:22.958940 deployer.go:119: git 2.7.4 is already installed.
+TRACE 2016/06/24 16:23:22.958983 command.go:23: Executing command: git config --global --list
+2016/06/24 16:23:22.969394 bootstrap.go:217: ============================================================
+2016/06/24 16:23:22.969419 bootstrap.go:218: Check prerequisite software
+2016/06/24 16:23:22.969429 bootstrap.go:219: ============================================================
+TRACE 2016/06/24 16:23:22.969436 macdeployer.go:149: docker Installation check
+TRACE 2016/06/24 16:23:22.969485 command.go:59: Executing command: docker --version
+TRACE 2016/06/24 16:23:22.981293 deployer.go:254: Found version 1.10.1 in version string "Docker version 1.10.1, build 9e83765" (match []string{"1.10.1", "1.10.1"})
+2016/06/24 16:23:22.982191 macdeployer.go:45: docker 1.10.1 is already installed.
+TRACE 2016/06/24 16:23:22.982212 macdeployer.go:149: docker-compose Installation check
+TRACE 2016/06/24 16:23:22.982296 command.go:59: Executing command: docker-compose --version
+TRACE 2016/06/24 16:23:23.196072 deployer.go:254: Found version 1.6.0 in version string "docker-compose version 1.6.0, build d99cad6" (match []string{"1.6.0", "1.6.0"})
+2016/06/24 16:23:23.211430 macdeployer.go:57: docker-compose 1.6.0 is installed
+TRACE 2016/06/24 16:23:23.211454 macdeployer.go:149: docker-machine Installation check
+TRACE 2016/06/24 16:23:23.211508 command.go:59: Executing command: docker-machine --version
+TRACE 2016/06/24 16:23:23.226972 deployer.go:254: Found version 0.6.0 in version string "docker-machine version 0.6.0, build e27fb87" (match []string{"0.6.0", "0.6.0"})
+2016/06/24 16:23:23.228110 macdeployer.go:57: docker-machine 0.6.0 is installed
+TRACE 2016/06/24 16:23:23.228128 macdeployer.go:149: virtualbox Installation check
+TRACE 2016/06/24 16:23:23.228211 command.go:59: Executing command: vboxmanage --version
+TRACE 2016/06/24 16:23:23.240877 deployer.go:254: Found version 5.0.20r106931 in version string "5.0.20r106931" (match []string{"5.0.20r106931", "5.0.20r106931"})
+2016/06/24 16:23:23.241241 macdeployer.go:57: virtualbox 5.0.20r106931 is installed
+TRACE 2016/06/24 16:23:23.241336 command.go:23: Executing command: docker-machine status shipped
+TRACE 2016/06/24 16:23:23.380167 compose.go:57: docker-machine shipped is running
+TRACE 2016/06/24 16:23:23.380255 command.go:23: Executing command: docker-machine status shipped
+TRACE 2016/06/24 16:23:23.507723 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 docker-machine-shipped,tcp,localhost,42376,,2376
+TRACE 2016/06/24 16:23:23.544908 compose.go:172: DOCKER_CERT_PATH = /Users/sakskuma/.docker/machine/machines/shipped
+TRACE 2016/06/24 16:23:23.544933 compose.go:172: DOCKER_HOST = tcp://localhost:42376
+TRACE 2016/06/24 16:23:23.544939 compose.go:172: DOCKER_MACHINE_NAME = shipped
+TRACE 2016/06/24 16:23:23.544944 compose.go:172: DOCKER_TLS_VERIFY = 1
+TRACE 2016/06/24 16:23:23.544951 compose.go:102: Docker machine environment setup complete
+TRACE 2016/06/24 16:23:23.545000 command.go:23: Executing command: docker ps
+2016/06/24 16:23:23.573823 compose.go:121: Verifying docker installation
+TRACE 2016/06/24 16:23:23.573942 composetest.go:126: Created directory /tmp/composetest
+TRACE 2016/06/24 16:23:23.574095 composetest.go:136: Created file /tmp/composetest/docker-compose.yml
+TRACE 2016/06/24 16:23:23.574161 command.go:23: Executing command: docker-compose --file composetest/docker-compose.yml up -d
+TRACE 2016/06/24 16:23:23.938523 composetest.go:162: Creating composetest_hello-world_1
+TRACE 2016/06/24 16:23:23.938578 command.go:23: Executing command: docker logs composetest_hello-world_1
+TRACE 2016/06/24 16:23:23.985335 composetest.go:173: Hello from Docker.
+TRACE 2016/06/24 16:23:23.985358 composetest.go:173: This message shows that your installation appears to be working correctly.
+TRACE 2016/06/24 16:23:23.985366 composetest.go:173: To generate this message, Docker took the following steps:
+TRACE 2016/06/24 16:23:23.985382 composetest.go:173:  1. The Docker client contacted the Docker daemon.
+TRACE 2016/06/24 16:23:23.985387 composetest.go:173:  2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+TRACE 2016/06/24 16:23:23.985391 composetest.go:173:  3. The Docker daemon created a new container from that image which runs the
+TRACE 2016/06/24 16:23:23.985396 composetest.go:173:     executable that produces the output you are currently reading.
+TRACE 2016/06/24 16:23:23.985401 composetest.go:173:  4. The Docker daemon streamed that output to the Docker client, which sent it
+TRACE 2016/06/24 16:23:23.985406 composetest.go:173:     to your terminal.
+TRACE 2016/06/24 16:23:23.985410 composetest.go:173: To try something more ambitious, you can run an Ubuntu container with:
+TRACE 2016/06/24 16:23:23.985415 composetest.go:173:  $ docker run -it ubuntu bash
+TRACE 2016/06/24 16:23:23.985420 composetest.go:173: Share images, automate workflows, and more with a free Docker Hub account:
+TRACE 2016/06/24 16:23:23.985424 composetest.go:173:  https://hub.docker.com
+TRACE 2016/06/24 16:23:23.985430 composetest.go:173: For more examples and ideas, visit:
+TRACE 2016/06/24 16:23:23.985435 composetest.go:173:  https://docs.docker.com/engine/userguide/
+TRACE 2016/06/24 16:23:23.985444 composetest.go:208: Cleaning up composetest directory
+TRACE 2016/06/24 16:23:23.985511 command.go:23: Executing command: docker rm -f composetest_hello-world_1
+TRACE 2016/06/24 16:23:24.016154 composetest.go:221: Successfully removed composetest directory composetest
+TRACE 2016/06/24 16:23:24.016212 client.go:114: POST https://api.ciscoshipped.io/cli/b540e214-3a45-11e6-939c-0242ac110024/status/install_docker?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN
+TRACE 2016/06/24 16:23:24.895369 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/06/24 16:23:24.895545 client.go:114: POST https://api.ciscoshipped.io/cli/b540e214-3a45-11e6-939c-0242ac110024/status/install_vbox?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN
+TRACE 2016/06/24 16:23:25.773066 client.go:159: Request status code 200 (200 OK)
+2016/06/24 16:23:25.773241 bootstrap.go:217: ============================================================
+2016/06/24 16:23:25.773257 bootstrap.go:218: Cloning Repositories
+2016/06/24 16:23:25.773268 bootstrap.go:219: ============================================================
+TRACE 2016/06/24 16:23:25.773279 common.go:107: Cloning Repositories Start
+TRACE 2016/06/24 16:23:25.773449 config.go:106: Created .shipped directory in /Users/sakskuma/Desktop/python/code/myapi/Akshay
+TRACE 2016/06/24 16:23:25.773621 config.go:117: Created config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:25.775445 config.go:139: Using config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:25.775570 config.go:158: Also using home config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:25.775869 config.go:189: Set value projectId=b540e214-3a45-11e6-939c-0242ac110024 in /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:25.776148 config.go:189: Set value projectName=Akshay in /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:25.776165 common.go:199: Created Akshay/.shipped/shipped.ini with projectId=b540e214-3a45-11e6-939c-0242ac110024 and projectName=Akshay
+TRACE 2016/06/24 16:23:25.776200 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+2016/06/24 16:23:25.776229 common.go:147: Skipping clone of service 1 postgres (29b1ea44-3a46-11e6-9bc7-0242ac11001a) of type ServiceDataPack
+2016/06/24 16:23:25.776252 common.go:162: Cloning service 2 akshayspark (2a5f6915-3a46-11e6-93a5-0242ac110024) into /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayspark
+TRACE 2016/06/24 16:23:25.776302 command.go:59: Executing command: git clone --progress https://github.com/akshayakumar/akshayspark Akshay/akshayspark
+2016/06/24 16:23:25.782629 git.go:208: Cloning into 'Akshay/akshayspark'...
+2016/06/24 16:23:26.666780 git.go:208: remote: Counting objects: 94, done.        
+2016/06/24 16:23:26.774833 git.go:208: remote: Compressing objects:  97% (82/84)           remote: Compressing objects:  98% (83/84)           remote: Compressing objects: 100% (84/84)           
+2016/06/24 16:23:26.774863 git.go:208: remote: Compressing objects: 100% (84/84), done.        
+2016/06/24 16:23:27.693823 git.go:208: remote: Total 94 (delta 4), reused 0 (delta 0), pack-reused 0        
+2016/06/24 16:23:27.702657 git.go:208: Checking connectivity... 
+2016/06/24 16:23:27.706975 git.go:208: done.
+TRACE 2016/06/24 16:23:27.749282 git.go:116: Found significant file Akshay/akshayspark/.babelrc
+TRACE 2016/06/24 16:23:27.749328 config.go:100: .shipped directory already exists
+TRACE 2016/06/24 16:23:27.749441 config.go:117: Created config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayspark/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:27.749533 config.go:139: Using config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayspark/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:27.749594 config.go:148: Also using project config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:27.749633 config.go:158: Also using home config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:27.749799 config.go:189: Set value serviceId=2a5f6915-3a46-11e6-93a5-0242ac110024 in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayspark/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:27.750008 config.go:189: Set value serviceName=akshayspark in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayspark/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:27.750023 common.go:199: Created Akshay/akshayspark/.shipped/shipped.ini with serviceId=2a5f6915-3a46-11e6-93a5-0242ac110024 and serviceName=akshayspark
+TRACE 2016/06/24 16:23:27.750153 command.go:59: Executing command: git add .gitignore
+TRACE 2016/06/24 16:23:27.765532 command.go:59: Executing command: git commit -m **Shipped -- Add .gitignore
+2016/06/24 16:23:27.781891 util.go:99: [master 8f18a28] **Shipped -- Add .gitignore
+2016/06/24 16:23:27.781906 util.go:99:  1 file changed, 1 insertion(+)
+TRACE 2016/06/24 16:23:27.782066 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/06/24 16:23:27.782078 common.go:171: Git clone of Service akshayspark (2a5f6915-3a46-11e6-93a5-0242ac110024) done!
+2016/06/24 16:23:27.782107 common.go:162: Cloning service 3 akshaytropo (2a7a6f70-3a46-11e6-a801-0242ac11001f) into /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaytropo
+TRACE 2016/06/24 16:23:27.782143 command.go:59: Executing command: git clone --progress https://github.com/akshayakumar/akshaytropo Akshay/akshaytropo
+2016/06/24 16:23:27.788013 git.go:208: Cloning into 'Akshay/akshaytropo'...
+2016/06/24 16:23:28.581723 git.go:208: remote: Counting objects: 52, done.        
+2016/06/24 16:23:28.692390 git.go:208: remote: Compressing objects:  86% (37/43)           remote: Compressing objects:  88% (38/43)           remote: Compressing objects:  90% (39/43)           remote: Compressing objects:  93% (40/43)           remote: Compressing objects:  95% (41/43)           remote: Compressing objects:  97% (42/43)           remote: Compressing objects: 100% (43/43)           remote: Compressing objects: 100% (43/43), done.        
+2016/06/24 16:23:29.412588 git.go:208: remote: Total 52 (delta 1), reused 0 (delta 0), pack-reused 0        
+2016/06/24 16:23:29.421928 git.go:208: Checking connectivity... 
+2016/06/24 16:23:29.425372 git.go:208: done.
+TRACE 2016/06/24 16:23:29.443868 git.go:116: Found significant file Akshay/akshaytropo/.drone.sec
+TRACE 2016/06/24 16:23:29.443915 config.go:100: .shipped directory already exists
+TRACE 2016/06/24 16:23:29.444024 config.go:117: Created config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaytropo/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:29.444124 config.go:139: Using config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaytropo/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:29.444169 config.go:148: Also using project config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:29.444200 config.go:158: Also using home config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:29.444418 config.go:189: Set value serviceId=2a7a6f70-3a46-11e6-a801-0242ac11001f in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaytropo/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:29.444592 config.go:189: Set value serviceName=akshaytropo in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaytropo/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:29.444602 common.go:199: Created Akshay/akshaytropo/.shipped/shipped.ini with serviceId=2a7a6f70-3a46-11e6-a801-0242ac11001f and serviceName=akshaytropo
+TRACE 2016/06/24 16:23:29.444709 command.go:59: Executing command: git add .gitignore
+TRACE 2016/06/24 16:23:29.460796 command.go:59: Executing command: git commit -m **Shipped -- Add .gitignore
+2016/06/24 16:23:29.473531 util.go:99: [master 0f99f6f] **Shipped -- Add .gitignore
+2016/06/24 16:23:29.473554 util.go:99:  1 file changed, 1 insertion(+)
+TRACE 2016/06/24 16:23:29.473688 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/06/24 16:23:29.473701 common.go:171: Git clone of Service akshaytropo (2a7a6f70-3a46-11e6-a801-0242ac11001f) done!
+2016/06/24 16:23:29.473728 common.go:162: Cloning service 4 akshaycmx (2a7c4620-3a46-11e6-93a7-0242ac110024) into /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaycmx
+TRACE 2016/06/24 16:23:29.473772 command.go:59: Executing command: git clone --progress https://github.com/akshayakumar/akshaycmx Akshay/akshaycmx
+2016/06/24 16:23:29.479101 git.go:208: Cloning into 'Akshay/akshaycmx'...
+2016/06/24 16:23:30.274712 git.go:208: remote: Counting objects: 42, done.        
+2016/06/24 16:23:30.685837 git.go:208: remote: Compressing objects:  94% (35/37)           remote: Compressing objects:  97% (36/37)           remote: Compressing objects: 100% (37/37)           remote: Compressing objects: 100% (37/37), done.        
+2016/06/24 16:23:31.124733 git.go:208: remote: Total 42 (delta 8), reused 0 (delta 0), pack-reused 0        
+2016/06/24 16:23:31.144554 git.go:208: Checking connectivity... 
+2016/06/24 16:23:31.148125 git.go:208: done.
+TRACE 2016/06/24 16:23:31.190725 git.go:116: Found significant file Akshay/akshaycmx/.drone.sec
+TRACE 2016/06/24 16:23:31.190769 config.go:100: .shipped directory already exists
+TRACE 2016/06/24 16:23:31.190869 config.go:117: Created config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaycmx/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:31.190973 config.go:139: Using config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaycmx/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:31.191045 config.go:148: Also using project config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:31.191078 config.go:158: Also using home config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:31.191267 config.go:189: Set value serviceId=2a7c4620-3a46-11e6-93a7-0242ac110024 in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaycmx/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:31.191469 config.go:189: Set value serviceName=akshaycmx in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaycmx/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:31.191483 common.go:199: Created Akshay/akshaycmx/.shipped/shipped.ini with serviceId=2a7c4620-3a46-11e6-93a7-0242ac110024 and serviceName=akshaycmx
+TRACE 2016/06/24 16:23:31.191633 command.go:59: Executing command: git add .gitignore
+TRACE 2016/06/24 16:23:31.220222 command.go:59: Executing command: git commit -m **Shipped -- Add .gitignore
+2016/06/24 16:23:31.250814 util.go:99: [master c378013] **Shipped -- Add .gitignore
+2016/06/24 16:23:31.250833 util.go:99:  1 file changed, 1 insertion(+)
+TRACE 2016/06/24 16:23:31.251120 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/06/24 16:23:31.251131 common.go:171: Git clone of Service akshaycmx (2a7c4620-3a46-11e6-93a7-0242ac110024) done!
+2016/06/24 16:23:31.251158 common.go:162: Cloning service 5 akshay (2a7d99a8-3a46-11e6-93a9-0242ac110024) into /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshay
+TRACE 2016/06/24 16:23:31.251189 command.go:59: Executing command: git clone --progress https://github.com/akshayakumar/akshay Akshay/akshay
+2016/06/24 16:23:31.257607 git.go:208: Cloning into 'Akshay/akshay'...
+2016/06/24 16:23:32.063023 git.go:208: remote: Compressing objects:  50% (4/8)           remote: Compressing objects:  62% (5/8)           remote: Compressing objects:  75% (6/8)           remote: Compressing objects:  87% (7/8)           remote: Compressing objects: 100% (8/8)           remote: Compressing objects: 100% (8/8), done.        
+2016/06/24 16:23:32.063757 git.go:208: remote: Total 14 (delta 0), reused 0 (delta 0), pack-reused 0        
+2016/06/24 16:23:32.075437 git.go:208: Checking connectivity... 
+2016/06/24 16:23:32.079327 git.go:208: done.
+TRACE 2016/06/24 16:23:32.087621 git.go:116: Found significant file Akshay/akshay/.drone.sec
+TRACE 2016/06/24 16:23:32.087660 config.go:100: .shipped directory already exists
+TRACE 2016/06/24 16:23:32.087780 config.go:117: Created config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:32.087895 config.go:139: Using config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:32.087946 config.go:148: Also using project config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:32.087974 config.go:158: Also using home config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:32.088156 config.go:189: Set value serviceId=2a7d99a8-3a46-11e6-93a9-0242ac110024 in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:32.088307 config.go:189: Set value serviceName=akshay in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:32.088318 common.go:199: Created Akshay/akshay/.shipped/shipped.ini with serviceId=2a7d99a8-3a46-11e6-93a9-0242ac110024 and serviceName=akshay
+TRACE 2016/06/24 16:23:32.088382 common.go:211: Created Akshay/akshay/.gitignore
+TRACE 2016/06/24 16:23:32.088442 command.go:59: Executing command: git add .gitignore
+TRACE 2016/06/24 16:23:32.096054 command.go:59: Executing command: git commit -m **Shipped -- Add .gitignore
+2016/06/24 16:23:32.111585 util.go:99: [master 086fd7a] **Shipped -- Add .gitignore
+2016/06/24 16:23:32.111612 util.go:99:  1 file changed, 1 insertion(+)
+2016/06/24 16:23:32.111652 util.go:99:  create mode 100644 .gitignore
+TRACE 2016/06/24 16:23:32.111737 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/06/24 16:23:32.111764 common.go:171: Git clone of Service akshay (2a7d99a8-3a46-11e6-93a9-0242ac110024) done!
+2016/06/24 16:23:32.111809 common.go:162: Cloning service 6 akshayapicem (2ae8cf27-3a46-11e6-93ab-0242ac110024) into /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayapicem
+TRACE 2016/06/24 16:23:32.111860 command.go:59: Executing command: git clone --progress https://github.com/akshayakumar/akshayapicem Akshay/akshayapicem
+2016/06/24 16:23:32.119383 git.go:208: Cloning into 'Akshay/akshayapicem'...
+2016/06/24 16:23:32.920288 git.go:208: remote: Counting objects: 85, done.        
+2016/06/24 16:23:33.029420 git.go:208: remote: Compressing objects:  97% (78/80)           remote: Compressing objects:  98% (79/80)           remote: Compressing objects: 100% (80/80)           remote: Compressing objects: 100% (80/80), done.        
+2016/06/24 16:23:34.685015 git.go:208: remote: Total 85 (delta 7), reused 0 (delta 0), pack-reused 0        
+2016/06/24 16:23:34.689414 git.go:208: Checking connectivity... 
+2016/06/24 16:23:34.693371 git.go:208: done.
+TRACE 2016/06/24 16:23:34.740827 git.go:116: Found significant file Akshay/akshayapicem/.drone.sec
+TRACE 2016/06/24 16:23:34.740871 config.go:100: .shipped directory already exists
+TRACE 2016/06/24 16:23:34.740983 config.go:117: Created config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayapicem/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:34.741056 config.go:139: Using config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayapicem/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:34.741106 config.go:148: Also using project config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:34.741133 config.go:158: Also using home config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:34.741317 config.go:189: Set value serviceId=2ae8cf27-3a46-11e6-93ab-0242ac110024 in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayapicem/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:34.741484 config.go:189: Set value serviceName=akshayapicem in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshayapicem/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:34.741496 common.go:199: Created Akshay/akshayapicem/.shipped/shipped.ini with serviceId=2ae8cf27-3a46-11e6-93ab-0242ac110024 and serviceName=akshayapicem
+TRACE 2016/06/24 16:23:34.741625 command.go:59: Executing command: git add .gitignore
+TRACE 2016/06/24 16:23:34.756308 command.go:59: Executing command: git commit -m **Shipped -- Add .gitignore
+2016/06/24 16:23:34.774036 util.go:99: [master 6d0cee9] **Shipped -- Add .gitignore
+2016/06/24 16:23:34.774053 util.go:99:  1 file changed, 1 insertion(+)
+TRACE 2016/06/24 16:23:34.774302 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/06/24 16:23:34.774314 common.go:171: Git clone of Service akshayapicem (2ae8cf27-3a46-11e6-93ab-0242ac110024) done!
+2016/06/24 16:23:34.774343 common.go:162: Cloning service 7 akshaysparkjs (2b50d3d6-3a46-11e6-9bcb-0242ac11001a) into /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaysparkjs
+TRACE 2016/06/24 16:23:34.774378 command.go:59: Executing command: git clone --progress https://github.com/akshayakumar/akshaysparkjs Akshay/akshaysparkjs
+2016/06/24 16:23:34.779926 git.go:208: Cloning into 'Akshay/akshaysparkjs'...
+2016/06/24 16:23:35.587419 git.go:208: remote: Counting objects: 94, done.        
+2016/06/24 16:23:35.689859 git.go:208: ts:  92% (78/84)           remote: Compressing objects:  94% (79/84)           remote: Compressing objects:  95% (80/84)           remote: Compressing objects:  96% (81/84)           remote: Compressing objects:  97% (82/84)           remote: Compressing objects:  98% (83/84)           remote: Compressing objects: 100% (84/84)           remote: Compressing objects: 100% (84/84), done.        
+2016/06/24 16:23:36.514535 git.go:208: remote: Total 94 (delta 4), reused 0 (delta 0), pack-reused 0        
+2016/06/24 16:23:36.526888 git.go:208: Checking connectivity... 
+2016/06/24 16:23:36.530846 git.go:208: done.
+TRACE 2016/06/24 16:23:36.575425 git.go:116: Found significant file Akshay/akshaysparkjs/.babelrc
+TRACE 2016/06/24 16:23:36.575485 config.go:100: .shipped directory already exists
+TRACE 2016/06/24 16:23:36.575651 config.go:117: Created config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaysparkjs/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:36.575758 config.go:139: Using config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaysparkjs/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:36.575842 config.go:148: Also using project config file /Users/sakskuma/Desktop/python/code/myapi/Akshay/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:36.575887 config.go:158: Also using home config file /Users/sakskuma/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:36.576147 config.go:189: Set value serviceId=2b50d3d6-3a46-11e6-9bcb-0242ac11001a in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaysparkjs/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:36.576400 config.go:189: Set value serviceName=akshaysparkjs in /Users/sakskuma/Desktop/python/code/myapi/Akshay/akshaysparkjs/.shipped/shipped.ini
+TRACE 2016/06/24 16:23:36.576414 common.go:199: Created Akshay/akshaysparkjs/.shipped/shipped.ini with serviceId=2b50d3d6-3a46-11e6-9bcb-0242ac11001a and serviceName=akshaysparkjs
+TRACE 2016/06/24 16:23:36.576587 command.go:59: Executing command: git add .gitignore
+TRACE 2016/06/24 16:23:36.594894 command.go:59: Executing command: git commit -m **Shipped -- Add .gitignore
+2016/06/24 16:23:36.611709 util.go:99: [master 87b0402] **Shipped -- Add .gitignore
+2016/06/24 16:23:36.611738 util.go:99:  1 file changed, 1 insertion(+)
+TRACE 2016/06/24 16:23:36.611798 config.go:134: Can't find config file /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini (open /Users/sakskuma/Desktop/python/code/myapi/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/06/24 16:23:36.611823 common.go:171: Git clone of Service akshaysparkjs (2b50d3d6-3a46-11e6-9bcb-0242ac11001a) done!
+TRACE 2016/06/24 16:23:36.611910 memdb.go:283: MemDB shipped.db: Updated projects[b540e214-3a45-11e6-939c-0242ac110024].serviceRepoIDs="2a5f6915-3a46-11e6-93a5-0242ac110024:2a7a6f70-3a46-11e6-a801-0242ac11001f:2a7c4620-3a46-11e6-93a7-0242ac110024:2a7d99a8-3a46-11e6-93a9-0242ac110024:2ae8cf27-3a46-11e6-93ab-0242ac110024:2b50d3d6-3a46-11e6-9bcb-0242ac11001a"
+TRACE 2016/06/24 16:23:36.611926 memdb.go:283: MemDB shipped.db: Updated projects[b540e214-3a45-11e6-939c-0242ac110024].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:36.612290 memdb.go:283: MemDB shipped.db: Updated projects[b540e214-3a45-11e6-939c-0242ac110024].serviceImageIDs="29b1ea44-3a46-11e6-9bc7-0242ac11001a"
+TRACE 2016/06/24 16:23:36.612309 memdb.go:283: MemDB shipped.db: Updated projects[b540e214-3a45-11e6-939c-0242ac110024].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:36.612582 common.go:179: Cloning Repositories End
+2016/06/24 16:23:36.612621 bootstrap.go:217: ============================================================
+2016/06/24 16:23:36.612636 bootstrap.go:218: Download Configuration
+2016/06/24 16:23:36.612648 bootstrap.go:219: ============================================================
+TRACE 2016/06/24 16:23:36.612656 common.go:243: downloadScripts URL: https://api.ciscoshipped.io//cli/b540e214-3a45-11e6-939c-0242ac110024
+TRACE 2016/06/24 16:23:36.612723 download.go:68: Starting download of https://api.ciscoshipped.io//cli/b540e214-3a45-11e6-939c-0242ac110024/Vagrantfile?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN to Akshay/.shipped/Vagrantfile
+TRACE 2016/06/24 16:23:37.715069 download.go:121: Download of Vagrantfile complete; -1 bytes downloaded.
+TRACE 2016/06/24 16:23:37.715133 download.go:68: Starting download of https://api.ciscoshipped.io//cli/b540e214-3a45-11e6-939c-0242ac110024/docker-compose.yml?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN to Akshay/.shipped/docker-compose-shipped.yml
+TRACE 2016/06/24 16:23:38.141774 download.go:121: Download of docker-compose-shipped.yml complete; -1 bytes downloaded.
+TRACE 2016/06/24 16:23:38.142492 common.go:399: Created Vagrantfile.LocalDocker
+2016/06/24 16:23:38.142539 common.go:284: Using localhost Docker for service container deployment
+TRACE 2016/06/24 16:23:38.142707 command.go:59: Executing command: git -C Akshay/akshayspark reset .
+TRACE 2016/06/24 16:23:38.157595 command.go:59: Executing command: git -C Akshay/akshaytropo reset .
+TRACE 2016/06/24 16:23:38.168230 command.go:59: Executing command: git -C Akshay/akshaycmx reset .
+TRACE 2016/06/24 16:23:38.202615 command.go:59: Executing command: git -C Akshay/akshay reset .
+TRACE 2016/06/24 16:23:38.210570 command.go:59: Executing command: git -C Akshay/akshayapicem reset .
+TRACE 2016/06/24 16:23:38.226795 command.go:59: Executing command: git -C Akshay/akshaysparkjs reset .
+2016/06/24 16:23:38.240520 common.go:304: Verifed all configuration files for project
+TRACE 2016/06/24 16:23:38.240635 client.go:114: POST https://api.ciscoshipped.io/cli/b540e214-3a45-11e6-939c-0242ac110024/status/download_cli?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN
+TRACE 2016/06/24 16:23:38.533786 client.go:159: Request status code 200 (200 OK)
+2016/06/24 16:23:38.535047 bootstrap.go:217: ============================================================
+2016/06/24 16:23:38.535065 bootstrap.go:218: Bootstrap Sandbox VM
+2016/06/24 16:23:38.535072 bootstrap.go:219: ============================================================
+2016/06/24 16:23:38.535078 bootstrap.go:174: Docker pull may take few moments
+TRACE 2016/06/24 16:23:38.535105 util.go:66: Changed directory to Akshay/.shipped
+TRACE 2016/06/24 16:23:38.535130 client.go:114: GET https://api.ciscoshipped.io/projects/b540e214-3a45-11e6-939c-0242ac110024/services?api_token=NnGqqBfwcwwlJHYzrZJQimDNrdEwivNN
+TRACE 2016/06/24 16:23:39.460645 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/06/24 16:23:39.461630 composeUp.go:126: Processing v2 docker-compose.yml
+TRACE 2016/06/24 16:23:39.461676 portmgr.go:44: AssignHostPort: vmPort(33000) service(akshayspark) containerPort(3000)
+TRACE 2016/06/24 16:23:39.461767 command.go:23: Executing command: netstat -an
+TRACE 2016/06/24 16:23:39.468023 command.go:23: Executing command: docker ps --format {{.Ports}}
+TRACE 2016/06/24 16:23:39.498227 memdb.go:328: Memdb shipped.db: Started transaction
+TRACE 2016/06/24 16:23:39.498282 memdb.go:283: MemDB shipped.db: Updated ports[33000].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.498294 memdb.go:283: MemDB shipped.db: Updated ports[33000].serviceID="2a5f6915-3a46-11e6-93a5-0242ac110024"
+TRACE 2016/06/24 16:23:39.498302 memdb.go:283: MemDB shipped.db: Updated ports[33000].portnum=33000
+TRACE 2016/06/24 16:23:39.498317 memdb.go:283: MemDB shipped.db: Updated services[2a5f6915-3a46-11e6-93a5-0242ac110024].portnum=33000
+TRACE 2016/06/24 16:23:39.498323 memdb.go:283: MemDB shipped.db: Updated services[2a5f6915-3a46-11e6-93a5-0242ac110024].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.498330 memdb.go:283: MemDB shipped.db: Updated services[2a5f6915-3a46-11e6-93a5-0242ac110024].user="akshayakumar"
+TRACE 2016/06/24 16:23:39.498336 memdb.go:283: MemDB shipped.db: Updated services[2a5f6915-3a46-11e6-93a5-0242ac110024].apiServer="https://api.ciscoshipped.io"
+TRACE 2016/06/24 16:23:39.498343 memdb.go:283: MemDB shipped.db: Updated services[2a5f6915-3a46-11e6-93a5-0242ac110024].serviceID="2a5f6915-3a46-11e6-93a5-0242ac110024"
+TRACE 2016/06/24 16:23:39.498714 memdb.go:352: Memdb shipped.db: Transaction committed
+TRACE 2016/06/24 16:23:39.498735 memdb.go:336: Memdb shipped.db: Rollback called with no active transaction
+TRACE 2016/06/24 16:23:39.498741 portmgr.go:86: VM port 33000 is available for service akshayspark (2a5f6915-3a46-11e6-93a5-0242ac110024)
+TRACE 2016/06/24 16:23:39.498751 composeUp.go:155: Leaving service akshayspark exposed port unchanged at 33000
+TRACE 2016/06/24 16:23:39.498782 portmgr.go:44: AssignHostPort: vmPort(33001) service(akshaytropo) containerPort(3000)
+TRACE 2016/06/24 16:23:39.498833 command.go:23: Executing command: netstat -an
+TRACE 2016/06/24 16:23:39.504236 command.go:23: Executing command: docker ps --format {{.Ports}}
+TRACE 2016/06/24 16:23:39.530173 memdb.go:328: Memdb shipped.db: Started transaction
+TRACE 2016/06/24 16:23:39.530219 memdb.go:283: MemDB shipped.db: Updated ports[33001].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.530228 memdb.go:283: MemDB shipped.db: Updated ports[33001].serviceID="2a7a6f70-3a46-11e6-a801-0242ac11001f"
+TRACE 2016/06/24 16:23:39.530238 memdb.go:283: MemDB shipped.db: Updated ports[33001].portnum=33001
+TRACE 2016/06/24 16:23:39.530262 memdb.go:283: MemDB shipped.db: Updated services[2a7a6f70-3a46-11e6-a801-0242ac11001f].portnum=33001
+TRACE 2016/06/24 16:23:39.530275 memdb.go:283: MemDB shipped.db: Updated services[2a7a6f70-3a46-11e6-a801-0242ac11001f].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.530285 memdb.go:283: MemDB shipped.db: Updated services[2a7a6f70-3a46-11e6-a801-0242ac11001f].user="akshayakumar"
+TRACE 2016/06/24 16:23:39.530291 memdb.go:283: MemDB shipped.db: Updated services[2a7a6f70-3a46-11e6-a801-0242ac11001f].apiServer="https://api.ciscoshipped.io"
+TRACE 2016/06/24 16:23:39.530303 memdb.go:283: MemDB shipped.db: Updated services[2a7a6f70-3a46-11e6-a801-0242ac11001f].serviceID="2a7a6f70-3a46-11e6-a801-0242ac11001f"
+TRACE 2016/06/24 16:23:39.530653 memdb.go:352: Memdb shipped.db: Transaction committed
+TRACE 2016/06/24 16:23:39.530674 memdb.go:336: Memdb shipped.db: Rollback called with no active transaction
+TRACE 2016/06/24 16:23:39.530680 portmgr.go:86: VM port 33001 is available for service akshaytropo (2a7a6f70-3a46-11e6-a801-0242ac11001f)
+TRACE 2016/06/24 16:23:39.530692 composeUp.go:155: Leaving service akshaytropo exposed port unchanged at 33001
+TRACE 2016/06/24 16:23:39.530724 portmgr.go:44: AssignHostPort: vmPort(33002) service(akshaycmx) containerPort(3000)
+TRACE 2016/06/24 16:23:39.530784 command.go:23: Executing command: netstat -an
+TRACE 2016/06/24 16:23:39.536198 command.go:23: Executing command: docker ps --format {{.Ports}}
+TRACE 2016/06/24 16:23:39.561673 memdb.go:328: Memdb shipped.db: Started transaction
+TRACE 2016/06/24 16:23:39.561717 memdb.go:283: MemDB shipped.db: Updated ports[33002].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.561756 memdb.go:283: MemDB shipped.db: Updated ports[33002].serviceID="2a7c4620-3a46-11e6-93a7-0242ac110024"
+TRACE 2016/06/24 16:23:39.561772 memdb.go:283: MemDB shipped.db: Updated ports[33002].portnum=33002
+TRACE 2016/06/24 16:23:39.561797 memdb.go:283: MemDB shipped.db: Updated services[2a7c4620-3a46-11e6-93a7-0242ac110024].portnum=33002
+TRACE 2016/06/24 16:23:39.561806 memdb.go:283: MemDB shipped.db: Updated services[2a7c4620-3a46-11e6-93a7-0242ac110024].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.561813 memdb.go:283: MemDB shipped.db: Updated services[2a7c4620-3a46-11e6-93a7-0242ac110024].user="akshayakumar"
+TRACE 2016/06/24 16:23:39.561819 memdb.go:283: MemDB shipped.db: Updated services[2a7c4620-3a46-11e6-93a7-0242ac110024].apiServer="https://api.ciscoshipped.io"
+TRACE 2016/06/24 16:23:39.561826 memdb.go:283: MemDB shipped.db: Updated services[2a7c4620-3a46-11e6-93a7-0242ac110024].serviceID="2a7c4620-3a46-11e6-93a7-0242ac110024"
+TRACE 2016/06/24 16:23:39.562174 memdb.go:352: Memdb shipped.db: Transaction committed
+TRACE 2016/06/24 16:23:39.562194 memdb.go:336: Memdb shipped.db: Rollback called with no active transaction
+TRACE 2016/06/24 16:23:39.562203 portmgr.go:86: VM port 33002 is available for service akshaycmx (2a7c4620-3a46-11e6-93a7-0242ac110024)
+TRACE 2016/06/24 16:23:39.562214 composeUp.go:155: Leaving service akshaycmx exposed port unchanged at 33002
+TRACE 2016/06/24 16:23:39.562246 portmgr.go:44: AssignHostPort: vmPort(35000) service(akshay) containerPort(5000)
+TRACE 2016/06/24 16:23:39.562294 command.go:23: Executing command: netstat -an
+TRACE 2016/06/24 16:23:39.568067 command.go:23: Executing command: docker ps --format {{.Ports}}
+TRACE 2016/06/24 16:23:39.594523 memdb.go:328: Memdb shipped.db: Started transaction
+TRACE 2016/06/24 16:23:39.594568 memdb.go:283: MemDB shipped.db: Updated ports[35000].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.594578 memdb.go:283: MemDB shipped.db: Updated ports[35000].serviceID="2a7d99a8-3a46-11e6-93a9-0242ac110024"
+TRACE 2016/06/24 16:23:39.594587 memdb.go:283: MemDB shipped.db: Updated ports[35000].portnum=35000
+TRACE 2016/06/24 16:23:39.594600 memdb.go:283: MemDB shipped.db: Updated services[2a7d99a8-3a46-11e6-93a9-0242ac110024].portnum=35000
+TRACE 2016/06/24 16:23:39.594607 memdb.go:283: MemDB shipped.db: Updated services[2a7d99a8-3a46-11e6-93a9-0242ac110024].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.594614 memdb.go:283: MemDB shipped.db: Updated services[2a7d99a8-3a46-11e6-93a9-0242ac110024].user="akshayakumar"
+TRACE 2016/06/24 16:23:39.594620 memdb.go:283: MemDB shipped.db: Updated services[2a7d99a8-3a46-11e6-93a9-0242ac110024].apiServer="https://api.ciscoshipped.io"
+TRACE 2016/06/24 16:23:39.594627 memdb.go:283: MemDB shipped.db: Updated services[2a7d99a8-3a46-11e6-93a9-0242ac110024].serviceID="2a7d99a8-3a46-11e6-93a9-0242ac110024"
+TRACE 2016/06/24 16:23:39.594878 memdb.go:352: Memdb shipped.db: Transaction committed
+TRACE 2016/06/24 16:23:39.594891 memdb.go:336: Memdb shipped.db: Rollback called with no active transaction
+TRACE 2016/06/24 16:23:39.594898 portmgr.go:86: VM port 35000 is available for service akshay (2a7d99a8-3a46-11e6-93a9-0242ac110024)
+TRACE 2016/06/24 16:23:39.594909 composeUp.go:155: Leaving service akshay exposed port unchanged at 35000
+TRACE 2016/06/24 16:23:39.594935 portmgr.go:44: AssignHostPort: vmPort(33003) service(akshayapicem) containerPort(3000)
+TRACE 2016/06/24 16:23:39.594981 command.go:23: Executing command: netstat -an
+TRACE 2016/06/24 16:23:39.600069 command.go:23: Executing command: docker ps --format {{.Ports}}
+TRACE 2016/06/24 16:23:39.627349 memdb.go:328: Memdb shipped.db: Started transaction
+TRACE 2016/06/24 16:23:39.627401 memdb.go:283: MemDB shipped.db: Updated ports[33003].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.627410 memdb.go:283: MemDB shipped.db: Updated ports[33003].serviceID="2ae8cf27-3a46-11e6-93ab-0242ac110024"
+TRACE 2016/06/24 16:23:39.627417 memdb.go:283: MemDB shipped.db: Updated ports[33003].portnum=33003
+TRACE 2016/06/24 16:23:39.627435 memdb.go:283: MemDB shipped.db: Updated services[2ae8cf27-3a46-11e6-93ab-0242ac110024].portnum=33003
+TRACE 2016/06/24 16:23:39.627447 memdb.go:283: MemDB shipped.db: Updated services[2ae8cf27-3a46-11e6-93ab-0242ac110024].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.627455 memdb.go:283: MemDB shipped.db: Updated services[2ae8cf27-3a46-11e6-93ab-0242ac110024].user="akshayakumar"
+TRACE 2016/06/24 16:23:39.627465 memdb.go:283: MemDB shipped.db: Updated services[2ae8cf27-3a46-11e6-93ab-0242ac110024].apiServer="https://api.ciscoshipped.io"
+TRACE 2016/06/24 16:23:39.627471 memdb.go:283: MemDB shipped.db: Updated services[2ae8cf27-3a46-11e6-93ab-0242ac110024].serviceID="2ae8cf27-3a46-11e6-93ab-0242ac110024"
+TRACE 2016/06/24 16:23:39.627768 memdb.go:352: Memdb shipped.db: Transaction committed
+TRACE 2016/06/24 16:23:39.627780 memdb.go:336: Memdb shipped.db: Rollback called with no active transaction
+TRACE 2016/06/24 16:23:39.627785 portmgr.go:86: VM port 33003 is available for service akshayapicem (2ae8cf27-3a46-11e6-93ab-0242ac110024)
+TRACE 2016/06/24 16:23:39.627796 composeUp.go:155: Leaving service akshayapicem exposed port unchanged at 33003
+TRACE 2016/06/24 16:23:39.627828 portmgr.go:44: AssignHostPort: vmPort(33004) service(akshaysparkjs) containerPort(3000)
+TRACE 2016/06/24 16:23:39.627878 command.go:23: Executing command: netstat -an
+TRACE 2016/06/24 16:23:39.634273 command.go:23: Executing command: docker ps --format {{.Ports}}
+TRACE 2016/06/24 16:23:39.659819 memdb.go:328: Memdb shipped.db: Started transaction
+TRACE 2016/06/24 16:23:39.659877 memdb.go:283: MemDB shipped.db: Updated ports[33004].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.659893 memdb.go:283: MemDB shipped.db: Updated ports[33004].serviceID="2b50d3d6-3a46-11e6-9bcb-0242ac11001a"
+TRACE 2016/06/24 16:23:39.659903 memdb.go:283: MemDB shipped.db: Updated ports[33004].portnum=33004
+TRACE 2016/06/24 16:23:39.659920 memdb.go:283: MemDB shipped.db: Updated services[2b50d3d6-3a46-11e6-9bcb-0242ac11001a].portnum=33004
+TRACE 2016/06/24 16:23:39.659927 memdb.go:283: MemDB shipped.db: Updated services[2b50d3d6-3a46-11e6-9bcb-0242ac11001a].projectID="b540e214-3a45-11e6-939c-0242ac110024"
+TRACE 2016/06/24 16:23:39.659933 memdb.go:283: MemDB shipped.db: Updated services[2b50d3d6-3a46-11e6-9bcb-0242ac11001a].user="akshayakumar"
+TRACE 2016/06/24 16:23:39.659941 memdb.go:283: MemDB shipped.db: Updated services[2b50d3d6-3a46-11e6-9bcb-0242ac11001a].apiServer="https://api.ciscoshipped.io"
+TRACE 2016/06/24 16:23:39.659949 memdb.go:283: MemDB shipped.db: Updated services[2b50d3d6-3a46-11e6-9bcb-0242ac11001a].serviceID="2b50d3d6-3a46-11e6-9bcb-0242ac11001a"
+TRACE 2016/06/24 16:23:39.660227 memdb.go:352: Memdb shipped.db: Transaction committed
+TRACE 2016/06/24 16:23:39.660250 memdb.go:336: Memdb shipped.db: Rollback called with no active transaction
+TRACE 2016/06/24 16:23:39.660268 portmgr.go:86: VM port 33004 is available for service akshaysparkjs (2b50d3d6-3a46-11e6-9bcb-0242ac11001a)
+TRACE 2016/06/24 16:23:39.660279 composeUp.go:155: Leaving service akshaysparkjs exposed port unchanged at 33004
+TRACE 2016/06/24 16:23:39.660314 composeUp.go:137: Bypassing non-ServiceRepo service postgres in docker-compose-shipped.yml
+TRACE 2016/06/24 16:23:39.660520 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 delete akshay_akshayspark_1
+TRACE 2016/06/24 16:23:39.697886 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 akshay_akshayspark_1,tcp,localhost,33000,,33000
+2016/06/24 16:23:39.741852 composeUp.go:194: Assigned port localhost:33000 to service akshayspark
+TRACE 2016/06/24 16:23:39.741957 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 delete akshay_akshaytropo_1
+TRACE 2016/06/24 16:23:39.781574 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 akshay_akshaytropo_1,tcp,localhost,33001,,33001
+2016/06/24 16:23:39.823784 composeUp.go:194: Assigned port localhost:33001 to service akshaytropo
+TRACE 2016/06/24 16:23:39.823860 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 delete akshay_akshaycmx_1
+TRACE 2016/06/24 16:23:39.861366 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 akshay_akshaycmx_1,tcp,localhost,33002,,33002
+2016/06/24 16:23:39.905904 composeUp.go:194: Assigned port localhost:33002 to service akshaycmx
+TRACE 2016/06/24 16:23:39.905988 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 delete akshay_akshay_1
+TRACE 2016/06/24 16:23:39.944793 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 akshay_akshay_1,tcp,localhost,35000,,35000
+2016/06/24 16:23:39.986694 composeUp.go:194: Assigned port localhost:35000 to service akshay
+TRACE 2016/06/24 16:23:39.986781 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 delete akshay_akshayapicem_1
+TRACE 2016/06/24 16:23:40.024851 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 akshay_akshayapicem_1,tcp,localhost,33003,,33003
+2016/06/24 16:23:40.066756 composeUp.go:194: Assigned port localhost:33003 to service akshayapicem
+TRACE 2016/06/24 16:23:40.066851 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 delete akshay_akshaysparkjs_1
+TRACE 2016/06/24 16:23:40.106735 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 akshay_akshaysparkjs_1,tcp,localhost,33004,,33004
+2016/06/24 16:23:40.150109 composeUp.go:194: Assigned port localhost:33004 to service akshaysparkjs
+TRACE 2016/06/24 16:23:40.150150 composeUp.go:56: Bringing up virtual machine akshay
+TRACE 2016/06/24 16:23:40.150229 command.go:59: Executing command: docker-compose -f docker-compose-shipped.yml -p akshay up -d
+2016/06/24 16:23:40.416109 util.go:99: Creating network "akshay_default" with the default driver
+2016/06/24 16:23:40.523258 util.go:99: Pulling postgres (postgres:9.5)...
+2016/06/24 16:23:42.730259 util.go:99: 9.5: Pulling from library/postgres
+2016/06/24 16:24:33.470087 util.go:99: Digest: sha256:e0a230a9f5b4e1b8b03bb3e8cf7322b0e42b7838c5c87f4545edb48f5eb8f077
+2016/06/24 16:24:33.470203 util.go:99: Status: Downloaded newer image for postgres:9.5
+2016/06/24 16:24:33.476646 util.go:99: Creating akshay_postgres_1
+2016/06/24 16:24:33.615002 util.go:99: Building akshaysparkjs
+2016/06/24 16:24:34.083919 util.go:99: Step 1 : FROM shippedrepos-docker-base-images.bintray.io/spark-node-base:4.0.0
+2016/06/24 16:24:36.095477 util.go:99: 4.0.0: Pulling from spark-node-base
