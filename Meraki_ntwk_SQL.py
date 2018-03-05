@@ -9,7 +9,7 @@ url = "https://n67.meraki.com/api/v0/organizations/191019/networks"
 
 headers = {
     'content-type': "application/json",
-    'x-cisco-meraki-api-key': "25350e0d351caa70d3e40fee0ce6e9d8b15998ee",
+    'x-cisco-meraki-api-key': "",
     'cache-control': "no-cache"
     }
 
